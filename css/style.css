@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Helvetica Rounded Bold';
+    src: url('../fonts/helvetica-rounded-bold.otf');
+}
+
+@font-face {
+    font-family: 'Helvetica Bold';
+    src: url('../fonts/helvetica-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Helvetica Light';
+    src: url('../fonts/helvetica-light.ttf');
+}
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', 'Helvetica Rounded Bold', Arial, sans-serif !important;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+    outline: none;
+}
+
+nav {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 3px 11px 0px #f7f7f7;
+}
+
+.nav-links {
+    gap: 2em;
+    display: flex;
+}
+
+.nav-links span {
+    color: black;
+    font-family: 'Open Sans', 'Helvetica Light', Arial, sans-serif !important;
+    font-weight: 700;
+}
+
+.nav-links span:hover {
+    color: #4e4e4e;
+    transition: 0.5s;
+}
+
+.nav-buttons {
+    gap: 1em;
+    display: flex;
+}
+
+.nav-login,
+.nav-signup {
+    width: 90px;
+    height: 2.5rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+    font-size: 13px;
+    outline: none;
+}
+
+.nav-lang {
+    background-color: transparent;
+    border: none;
+    color: black;
+    outline: none;
+}
+
+.banner img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.banner .card {
+    width: 30rem;
+    max-width: 100%;
+    position: absolute;
+    min-height: 215px;
+    left: 11rem;
+    top: 16rem;
+}
+
+.fa-star {
+    color: #383838;
+}
+
+.slide-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.prev-arrow {
+    left: -40px;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 15px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    background-color: transparent;
+}
+
+.next-arrow {
+    right: -40px;
+    width: 0;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 15px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    background-color: transparent;
+}
+
+.menu-navbar {
+    margin-bottom: 2%;
+    background-color: #fbfbf8;
+    border-top: 1px solid #dcdacb;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.become-mentor {
+    padding: 20px 40px 20px 40px;
+    background-color: #fbfbf8;
+    border-bottom: 1px solid #dcdacb;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    background-color: #fbfbf8;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer-links {
+    padding: 15px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    color: black !important;
+    font-size: 13px;
+}
+
+.footer-social {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.footer-social a {
+    color: black !important;
+}
+
+
+/* Start Media Query (Responsive) */
+
+@media only screen and (max-width: 768px) {
+    .banner .card {
+        position: static;
+        min-height: auto;
+        width: 100%;
+        background: #fbfbf8;
+    }
+    .nav-links {
+        gap: 2em;
+        margin-bottom: 4%;
+        margin: 0;
+        padding: 0;
+    }
+    .logo {
+        text-align: center;
+        margin-bottom: 4%;
+    }
+    .nav-buttons {
+        align-content: stretch;
+        justify-content: center;
+        margin-bottom: 4%;
+    }
+    .menu-navbar {
+        overflow-x: scroll;
+        justify-content: start;
+    }
+    .recent-courses,
+    .recommended,
+    .handpicked {
+        margin-bottom: 15%;
+    }
+    .footer {
+        display: block;
+    }
+    .footer-links {
+        gap: 10px;
+        flex-direction: column;
+        align-items: start;
+    }
+    nav .col-lg-6 {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+}
+
+
+/* End Media Query */
